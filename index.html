@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Blog Blog</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Blog of Blogs</h1>
+
+        <section class="form-section">
+
+            <h2 id="formHeading">Create New Post</h2>
+
+            <form id="postForm" novalidate>
+
+                <div class="form-group">
+                    <label for="postTitle">Title:</label>
+
+                    <input type="text" id="postTitle" placeholder="Enter post title">
+
+                    <span id="titleError" class="error-message">
+                    </span>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="postContent">Content:</label>
+
+                    <textarea id="postContent" rows="6" placeholder="Write your blog post..."></textarea>
+
+                    <span id="contentError" class="error-message">
+                    </span>
+                </div>
+
+
+                <button type="submit" id="submitButton">
+                    Add Post
+                </button>
+
+                <button type="button" id="cancelButton">
+                    Cancel
+                </button>
+
+            </form>
+
+        </section>
+
+
+        
+        <section class="posts-section">
+
+            <h2>Blog Posts</h2>
+
+            <div id="postsContainer">
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
